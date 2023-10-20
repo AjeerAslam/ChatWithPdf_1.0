@@ -12,8 +12,8 @@ from langchain.callbacks import get_openai_callback
 import os
  
  
-
-os.environ.get('OPENAI_API_KEY')
+load_dotenv()
+ 
 def main():
     st.header("Chat with PDF ")
  
