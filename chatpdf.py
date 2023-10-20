@@ -14,7 +14,7 @@ import os
  
 load_dotenv()
 #set_key('.env', 'OPENAI_API_KEY', 'my-value')
-os.environ['OPENAI_API_KEY'] = 'my-value'
+os.environ['OPENAI_API_KEY'] = st.text_input("enter api key")
 my_variable = os.environ.get('OPENAI_API_KEY')
 st.write(my_variable)
 def main():
