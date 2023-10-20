@@ -13,7 +13,7 @@ import os
  
  
 load_dotenv()
-#set_key('.env', 'OPENAI_API_KEY', )
+set_key('.env', 'OPENAI_API_KEY', st.text_input("enter key"))
 def main():
     st.header("Chat with PDF ")
  
