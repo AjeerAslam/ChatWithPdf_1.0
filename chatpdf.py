@@ -1,5 +1,5 @@
 import streamlit as st
-from dotenv import load_dotenv
+
 import pickle
 from PyPDF2 import PdfReader
 from streamlit_extras.add_vertical_space import add_vertical_space
@@ -15,10 +15,7 @@ import openai
 
  
  
-load_dotenv()
-#set_key('.env', 'OPENAI_API_KEY', 'my-value')
-os.environ['OPENAI_API_KEY'] = st.text_input("enter api key")
-openai.api_key = os.environ.get('OPENAI_API_KEY')
+
 
 def main():
     st.header("Chat with PDF ")
